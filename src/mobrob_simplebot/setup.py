@@ -20,7 +20,11 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'simplebot_sim = mobrob_simplebot.simplebot_sim:main'
+            'simplebot_sim = mobrob_simplebot.simplebot_sim:main',
+            'simplebot_control = mobrob_simplebot.simplebot_control:main',
+            'simplebot_control_p = mobrob_simplebot.simplebot_control_param:main',
+            'simplebot_control_ps = mobrob_simplebot.simplebot_control_param_srv:main',
+            'turtlesim_pose_converter = mobrob_simplebot.turtlesim_pose_converter:main'
         ],
     },
 )
